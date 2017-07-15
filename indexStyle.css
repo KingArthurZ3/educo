@@ -1,0 +1,47 @@
+html, body{
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.parallaxOne {
+    /* The image used */
+    background-image: url("./Resources/Taxi.jpg");
+
+    opacity: 0.5;
+    /* Set a specific height */
+    min-height: 250px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#firstDiv{
+    height:300px;
+    background-color: lightgoldenrodyellow;
+    font-size:36px;
+
+    text-align: center;
+}
+
+#secondDiv{
+    height:150px;
+    background-color: white;
+    text-align: center;
+    font-size:36px
+}
+
+.parallaxTwo{
+    background-image: url("./Resources/taxi-cab-2.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
