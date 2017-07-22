@@ -56,7 +56,7 @@ html, body{
 
     opacity: 0.5;
     /* Set a specific height */
-    min-height: 250px;
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -67,7 +67,7 @@ html, body{
 
 #firstDiv{
     height:300px;
-    background-color: lightgoldenrodyellow;
+    background-color: aliceblue;
     font-size:36px;
 
     text-align: center;
@@ -91,4 +91,94 @@ html, body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* Styling for profile intros*/
+
+#meetInfo{
+    height: 350px;
+    background-color: lightskyblue;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.infoTab{
+    display: inline-block;
+    width: 20%;
+    height: 320px;
+    margin: 15px;
+    position:relative;
+
+    text-align: center;
+    background-color: whitesmoke;
+    vertical-align: middle;
+    border-radius: 10px;
+
+}
+
+.baseImg{
+    border-radius: 10px;
+    background-image: url("./Resources/cutePuppy.jpg");
+    width: 100%;
+    height: 75%;
+    display: block;
+}
+
+#firstInfo{
+    margin-left: 6%;
+}
+
+/* test */
+
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    border-radius: 10px;
+}
+
+.infoTab:hover .overlay {
+    bottom: 25%;
+    height: 75%;
+}
+
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.infoDesc{
+    display: block;
+    height: auto;
+    margin: 5px;
+    background-color: transparent;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.infoName{
+    display: block;
+    height: auto;
+    margin: 5px;
+    background-color: transparent;
+    width: 100%;
+    font-size: 27px;
+    text-align: center;
 }
